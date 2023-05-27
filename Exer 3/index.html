@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="body">
+
+    <nav>
+        <section class="nav-wrapper blue-grey darken-4 ">
+            <a href="index.html" class="brand-logo">Anime Center</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="page/sobre.html">Sobre</a></li>
+                <li><a href="badges.html">Faz pix aí</a></li>
+            </ul>
+        </section>
+    </nav>
+    <section class="container flip-container">
+        <section id="item1" class="flipper section_externo tooltipped" data-position="left" data-tooltip="Naruto">
+            </a>
+            <section class="frente">
+                <img src="imagens/naruto.jpg" />
+            </section>
+            <section class="tras midia">
+                <section>
+                </section>
+            </section>
+        </section>
+        <section id="item2" class="flipper section_externo tooltipped" data-position="left" data-tooltip="Demon Slayer">
+            <section class="frente midia2">
+            </section>
+            <section class="tras efeito_midia2">
+            </section>
+        </section>
+        <section id="item3" class="section_externo tooltipped" data-position="right" data-tooltip="Dragon Ball Z">
+            <section class="frente midia3 efeito_midia3">
+            </section>
+        </section>
+        <section id="item4" class="flipper section_externo tooltipped" data-position="left" data-tooltip="Zatch-Bell">
+            <section class="frente midia4">
+            </section>
+            <section class="tras efeito_midia4">
+            </section>
+        </section>
+        <section class="container_interno" id="item5">
+            <section id="itemMenor1" class="flipper section_intern tooltipped" data-position="left"
+                data-tooltip="Pokemon" id="item_interno_1">
+                <section class="frente midia_menor1">
+                </section>
+                <section class="tras efeito_midia_menor1">
+                </section>
+            </section>
+            <section id="itemMenor2" class="flipper section_interno tooltipped" data-position="left"
+                data-tooltip="Nanatsu no Taizai" id="item_interno_2">
+                <section class="frente midia_menor2">
+                </section>
+                <section class="tras efeito_midia_menor2">
+                </section>
+            </section>
+            <section id="itemMenor3" class="flipper section_interno tooltipped" data-position="left"
+                data-tooltip="Attack on Titan" id="item_interno_3">
+                <section class="frente midia_menor3">
+                </section>
+                <section class="tras efeito_midia_menor3">
+                </section>
+            </section>
+            <section id="itemMenor4" class="flipper section_interno tooltipped" data-position="left"
+                data-tooltip="Avatar: A Lenda de Aang" id="item_interno_4">
+                <section class="frente midia_menor4">
+                </section>
+                <section class="tras efeito_midia_menor4">
+                </section>
+            </section>
+        </section>
+        <section id="item6" class="section_externo tooltipped" data-position="left" data-tooltip="One Punch-Man">
+            <section class="midia6 efeito_midia6">
+            </section>
+        </section>
+        <section id="item7" class="flipper section_externo tooltipped" data-position="left" data-tooltip="Bleach">
+            <section class="frente midia7">
+            </section>
+            <section class="tras efeito_midia7">
+            </section>
+        </section>
+    </section>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.tooltipped');
+            var instances = M.Tooltip.init(elems, {
+                html: "Deu certo",
+                position: "bottom"
+            });
+        });
+    </script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

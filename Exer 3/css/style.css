@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
+
+.body{
+    width: 100%;
+    background-color: rgb(205, 205, 205);
+}
+
+.flip-container{
+    perspective: 1000px;
+}
+
+.flipper{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+    cursor: pointer;
+}
+
+.frente, .tras{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+section{
+    position: relative;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.tras{
+    transform: rotateY(180deg);
+}
+
+.flipper:hover{
+    transform: rotateY(180deg);
+}
+
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 15px;
+    gap: 10px;
+}
+
+.container .section_externo{
+    background-color: none;
+    color: aliceblue;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+}
+
+.container_interno{
+    width: 100%;
+    height: 100%;
+    background-color: none;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+
+
+.container .section_interno{
+    color: aliceblue;
+    border: 2px solid rgb(28, 67, 120);
+    border-radius: 5px;
+    
+}
+
+#item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6; 
+    height: 500px;   
+}
+
+#item2{
+    grid-column: 2/2;
+    grid-row: 1/2;  
+    height: 250px;
+}
+
+#item3{
+    grid-row: 1/2;  
+    width: 50%; 
+}
+
+#item5{
+    height: 250px;  
+}
+
+#item6{
+    height: 250px;  
+    width: 50%;
+    justify-items: center;
+    justify-self: end;
+}
+
+#item8{
+    height: 250px;  
+}
+
+
+
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: black;
+    opacity: 70%;
+    width: 80%;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+}
+
+.titulo_x{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+.midia{
+    background-image: url(../midia/naruto-certo.gif);
+    background-size: cover; 
+}
+
+.sobre{
+    font-weight: bold; 
+    color: aliceblue;
+    height: 400px;
+}
+
+.texto{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(45, 44, 44);
+    opacity: 80%;
+    border-radius: 10px;
+    margin: 10px;;
+    padding: 10px;
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+.midia2{
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagens/demon_slayer.jpeg);
+    background-size: cover; 
+}
+
+.efeito_midia2:hover {
+    background-image: url(../midia/demon_slayer.gif);
+    background-size: cover; 
+       
+}
+
+.midia3{
+    background-image: url(../imagens/goku.PNG);
+    background-size: cover; 
+}
+
+.efeito_midia3:hover {
+    background-image: url(../midia/goku-filme.gif);
+    background-size: cover; 
+       
+}
+
+.midia6{
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagens/image.png);
+    background-size: cover; 
+}
+
+.efeito_midia6:hover {
+    background-image: url(../midia/saitama.gif);
+    background-size: cover; 
+       
+}
+
+.midia4{
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagens/Zatch-Bell.jpg);
+    background-size: cover; 
+}
+
+.efeito_midia4:hover {
+    background-image: url(../midia/zatch_bell.gif);
+    background-size: cover;  
+}
+
+.midia7{
+    width: 100%;
+    height: 100%;
+    background-image: url(../imagens/bleach.PNG);
+    background-size: cover; 
+}
+
+.efeito_midia7:hover {
+    background-image: url(../midia/bleach.gif);
+    background-size: cover;  
+}
+
+/*Aqui inicia inerção de imagens no grid menor*/
+
+.midia_menor1{
+    background-image: url(../midia/pokemon.gif);
+    background-size: cover; 
+}
+
+.efeito_midia_menor1{
+    background-image: url(../imagens/pokemon.PNG);
+    background-size: cover; 
+}
+
+.midia_menor2{
+    background-image: url(../midia/nanatsu.gif);
+    background-size: cover; 
+}
+
+.efeito_midia_menor2{
+    background-image: url(../imagens/nanatsu.PNG);
+    background-size: cover; 
+}
+
+.midia_menor3{
+    background-image: url(../midia/attack_titan.gif);
+    background-size: cover; 
+}
+
+.efeito_midia_menor3{
+    background-image: url(../imagens/attack_titan.PNG);
+    background-size: cover; 
+}
+
+.midia_menor4{
+    background-image: url(../midia/avatar.gif);
+    background-size: cover; 
+}
+
+.efeito_midia_menor4{
+    background-image: url(../imagens/avatar.PNG);
+    background-size: cover; 
+}
+
+/*Aqui acaba inerção de imagens no grid menor*/
+
+.body2{
+    margin-top: 50%;
+    margin-bottom: 50%;
+    margin-left: 50%;
+    margin-right: 50%;
+    height: 20px;
+    width: 400px;
+
+}
+
+.main{
+    width: 80%;
+    height: 299px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(174, 174, 174);
+    margin-top: 5%;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgb(51, 50, 50);
+    border: 2px solid black;
+}
+
+p{
+    padding: 10px;
+}
